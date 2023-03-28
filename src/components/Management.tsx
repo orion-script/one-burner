@@ -18,8 +18,8 @@ const Management = () => {
                     <h2 className="font-normal text-2xl md:text-4xl py-4 text-[#333333]">Manage team activities all in one place.</h2>
                     <p className="font-normal text-base md:text-xl text-[#454545CC]">Keep your team organized and informed with activities that are up to date.</p>
                 </div>
-
-                <Image src={Managements} alt={Managements} className="md:w-2/5" />
+                
+                <Image src={Managements} alt="Managements icon" className="md:w-2/5" />
             </div>
         </div>
      );
