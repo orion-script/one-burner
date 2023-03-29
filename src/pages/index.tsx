@@ -6,6 +6,9 @@ import Management from '../components/Management'
 import Team from '../components/Team'
 import Selection from "../components/Selection"
 import Selection2 from "../components/Selection2"
+import About from "../components/About"
+import Better from "../components/Better"
+import Footer from "../components/Footer"
 
 
 export default function Home() {
@@ -25,7 +28,10 @@ export default function Home() {
        <Team />
        <Selection />
        <Selection2 />
+       <About />
+       <Better />
       </main>
+      <Footer />
     </>
   )
 }
