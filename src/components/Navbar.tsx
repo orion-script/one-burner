@@ -6,8 +6,7 @@ import { FaBars } from 'react-icons/fa';
 
 const NavBAr = () => {
     return ( 
-        <nav className='bg-slate-200 w-full px-10 m-auto flex justify-between items-center fixed top-0 left-0 right-0 shadow-xl z-50' data-aos="flip-down">
-
+        <nav className='bg-slate-200 w-full px-10 m-auto flex justify-between items-center fixed top-0 left-0 right-0 shadow-xl z-50'>
             <Image src={Logo} alt="logo image" className='w-7/12 md:w-2/12' />
         
             <FaBars className=' md:hidden'/>

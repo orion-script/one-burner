@@ -6,7 +6,7 @@ import Hero from "../assets/png/hero.png"
 
 const About = () => {
     return ( 
-        <div className="flex flex-col md:flex-row justify-between w-11/12 m-auto my-20">
+        <div className="flex flex-col md:flex-row justify-between w-10/12 m-auto my-20">
             <div className="w-3/5 md:w-2/12 m-auto md:h-[20rem]">
                 <div className="py-5">
                     <Image src={Chat4} alt="chat icon" className="h-8" data-aos="zoom-in" />
@@ -24,7 +24,7 @@ const About = () => {
                 </div>
             </div>
 
-            <Image src={Hero} alt="hero image" className="w-3/5 md:w-3/12 h-56 mt-10 mx-auto" data-aos="zoom-in-up" />
+            <Image src={Hero} alt="hero image" className="w-2/4 md:w-3/12 h-56 mt-10 mx-auto" data-aos="zoom-in-up" />
 
             <div className="w-11/12 md:w-5/12 mt-10 md:mt-14">
                 <h2 className="text-[#333333] font-normal text-2xl md:text-4xl" data-aos="fade-up">24/7 customer support</h2>
