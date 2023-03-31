@@ -3,6 +3,7 @@ import Logo from "../assets/svg/logo.svg"
 import ArrowDown from "../assets/svg/arrowdown.svg"
 import ArrowRight from "../assets/svg/arrowright.svg"
 import { FaBars } from 'react-icons/fa';
+import Link from 'next/link';
 
 const NavBAr = () => {
     return ( 
@@ -25,7 +26,7 @@ const NavBAr = () => {
             <div className="hidden md:flex items-center justify-between w-[30%]">
                 <a href="">Contact Sales</a>
 
-                <a href="/login">Login</a>
+                <Link href="/login">Login</Link>
                 
                 <div className="bg-[#462686] flex items-center justify-around w-[39%] px-4 rounded-[100px] text-white">
                     <button className=''>Try For Free</button>
