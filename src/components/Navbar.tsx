@@ -25,7 +25,7 @@ const NavBAr = () => {
             <div className="hidden md:flex items-center justify-between w-[30%]">
                 <a href="">Contact Sales</a>
 
-                <button>Login</button>
+                <a href="/login">Login</a>
                 
                 <div className="bg-[#462686] flex items-center justify-around w-[39%] px-4 rounded-[100px] text-white">
                     <button className=''>Try For Free</button>
