@@ -4,7 +4,7 @@ import CEO from "../assets/png/Ellipse-5.png"
 const Hassan = () => {
     return (
         <>
-            <p className="text-center px-2 md:px-28 font-light text-2xl" data-aos="fade-up">Best. Product. Ever! We like Oneburner more and more each day because it makes our work a lot easier. It's just amazing. Very easy to use, impressed us on multiple levels. Thank you so much for your help and is worth much more than we paid. We were treated like royalty.</p>
+            <p className="text-center px-2 md:px-28 font-light text-2xl" data-aos="fade-up">Best. Product. Ever! We like Oneburner more and more each day because it makes our work a lot easier. It is just amazing. Very easy to use, impressed us on multiple levels. Thank you so much for your help and is worth much more than we paid. We were treated like royalty.</p>
 
             <div className="inline-flex items-center justify-center w-full mt-20">
                 <hr className="hidden md:block w-10/12 h-px my-8 border-0 bg-gray-300" />
