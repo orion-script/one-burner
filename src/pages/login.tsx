@@ -5,12 +5,17 @@ import Eye from "../assets/svg/eye-19.svg"
 import OutLook from "../assets/svg/outlook.svg"
 import LinkedIn from "../assets/svg/linkedin.svg"
 import Google from "../assets/svg/google-icon.svg"
+import Link from 'next/link';
 
 const Login = () => {
     return ( 
         <>
         <div className="flex justify-between w-10/12 m-auto items-center pt-2 md:pt-5">
-            <Image src={Logo} alt="logo image" className='w-5/12 md:w-2/12' />
+
+
+        <Link href="/" className='w-5/12 md:w-2/12'>
+            <Image src={Logo} alt="logo image" className='w-full' />
+        </Link>
 
             <div className="hidden md:flex justify-between items-center md:w-4/12">
                 <a href="" className='font-normal text-sm md:text-lg'>New Customer?</a>

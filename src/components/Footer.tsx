@@ -8,7 +8,7 @@ import LinkedInFooter from "../assets/svg/linkedin-footer.svg"
 import YoutubeFooter from "../assets/svg/youtube-footer.svg"
 
 const Footer = () => {
-    return ( 
+    return (
         <footer className="flex flex-col">
             <div className="w-11/12 md:flex justify-between m-auto items-center">
                 <Image src={Logo} alt="logo image" className='w-7/12 md:w-2/12' h-10 />
@@ -29,15 +29,15 @@ const Footer = () => {
                     <h2 className="text-[#333333CC] font-normal text-xl mb-5">+234-80-000-0000</h2>
 
                     <div className="flex w-10/12">
-                    <Image src={FacebookFooter} alt="facebook icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
-                    <Image src={TwitterFooter} alt="twitter icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
-                    <Image src={LinkedInFooter} alt="linkedin icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
-                    <Image src={YoutubeFooter} alt="youtube icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
+                        <Image src={FacebookFooter} alt="facebook icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
+                        <Image src={TwitterFooter} alt="twitter icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
+                        <Image src={LinkedInFooter} alt="linkedin icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
+                        <Image src={YoutubeFooter} alt="youtube icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />
                     </div>
                 </div>
 
                 <div className="md:flex justify-between w-11/12 md:w-[65%] text-[#01001D99]">
-                    <div className="flex flex-col justify-between my-5">
+                    <div className="flex flex-col justify-between">
                         <a href="" className="text-[#150B28] font-bold text-xl pb-5">Product</a>
                         <a href="">Features</a>
                         <a href="">Enterprise</a>
@@ -56,7 +56,7 @@ const Footer = () => {
                         <a href="">Careers</a>
                         <a href="">In the News</a>
                     </div>
-                    
+
                     <div className="flex flex-col mb-5">
                         <a href="" className="text-[#150B28] font-semibold md:font-bold text-lg md:text-xl pb-5">ONEBURNER FOR TEAMS</a>
                         <a href="">Engineering</a>
@@ -90,7 +90,7 @@ const Footer = () => {
 
             <p className="pl-4 md:pl-12 pb-5">© 2020 Oneburner.com | All Rights Reserved. </p>
         </footer>
-     );
+    );
 }
- 
+
 export default Footer;

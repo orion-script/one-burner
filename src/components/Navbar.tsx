@@ -8,7 +8,10 @@ import Link from 'next/link';
 const NavBAr = () => {
     return ( 
         <nav className='bg-slate-200 w-full px-10 m-auto flex justify-between items-center fixed top-0 left-0 right-0 shadow-xl z-50'>
-            <Image src={Logo} alt="logo image" className='w-7/12 md:w-2/12' />
+            
+            <Link href="/" className='w-7/12 md:w-2/12'>
+                <Image src={Logo} alt="logo image" className='w-full' />
+            </Link>
         
             <FaBars className=' md:hidden'/>
 
@@ -19,7 +22,7 @@ const NavBAr = () => {
                 </div>
 
                 <a href="">Pricing</a>
-                <a href="">Enterprise</a>
+                <Link href="/enterprise">Enterprise</Link>
                 <a href="">Support</a>
             </div>
 
