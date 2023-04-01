@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CEO from "../assets/png/Ellipse-5.png"
 
-const Hassan = () => {
+const Information = () => {
     return (
         <>
             <p className="text-center px-2 md:px-28 font-light text-2xl" data-aos="fade-up">Best. Product. Ever! We like Oneburner more and more each day because it makes our work a lot easier. It is just amazing. Very easy to use, impressed us on multiple levels. Thank you so much for your help and is worth much more than we paid. We were treated like royalty.</p>
@@ -20,4 +20,4 @@ const Hassan = () => {
     );
 }
 
-export default Hassan; 
+export default Information; 

@@ -4,7 +4,7 @@ import Companies from "@/components/Companies";
 import Grow from "../components/Grow";
 import Selection from "../components/Selection";
 import Regional from "../components/Regional";
-import CEo from "../components/Hassan";
+import Infor from "../components/Information";
 import Learn from "../components/Learn";
 import Footer from "../components/Footer";
 
@@ -17,7 +17,7 @@ const Enterprise = () => {
             <Grow />
             <Selection />
             <Regional />
-            <CEo />
+            <Infor />
             <Learn />
             <Footer />
         </>
