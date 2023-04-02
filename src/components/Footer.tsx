@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="flex flex-col">
             <div className="w-11/12 md:flex justify-between m-auto items-center">
-                <Image src={Logo} alt="logo image" className='w-7/12 md:w-2/12' h-10 />
+                <Image src={Logo} alt="logo image" className='w-7/12 md:w-2/12' />
 
                 <span className="bg-[#E5E5E5] border border-[#462686] flex items-center w-[120px] h-8 cursor-pointer">
                     <Image src={World} alt="world icon" className='ml-2 cursor-pointer mt-1 mr-2 h-4' />

@@ -5,17 +5,14 @@ import ArrowRight from "../assets/svg/arrowright.svg"
 import Close from "../assets/svg/close.svg"
 import { FaBars } from 'react-icons/fa';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const NavBAr = () => {
-
     const [navbar, setNavbar] = useState(false);
 
-    const toggleSideBar = () => {
+    useEffect(() => {
         navbar ? document.body.classList.add("fixed") : document.body.classList.remove("fixed");
-    };
-
-    toggleSideBar()
+    }, [navbar])
 
     return (
 
@@ -27,9 +24,9 @@ const NavBAr = () => {
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
                             {/* LOGO */}
                             <Link href="/">
-                                {/* <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2> */}
                                 <Image src={Logo} alt="logo image" className='h-10 w-[10rem]' />
                             </Link>
+
                             {/* HAMBURGER BUTTON FOR MOBILE */}
                             <div className="md:hidden">
                                 <button
@@ -37,13 +34,11 @@ const NavBAr = () => {
                                     onClick={() => setNavbar(!navbar)}
                                 >
                                     {navbar ? (
-                                        <Image src={Close} width={15} height={15} alt="close ison" />
+                                        <Image src={Close} width={15} height={15} alt="close ison" className='' />
                                     ) : (
                                         <FaBars
                                             className="focus:border-none active:border-none"
                                         />
-
-                                        // <Image src={FaBars} alt="logo image" className='w-7/12 md:w-2/12' />
                                     )}
                                 </button>
                             </div>
@@ -71,30 +66,30 @@ const NavBAr = () => {
                                             Pricing
                                         </Link>
                                     </li>
+
                                     <li className="pb-6 md:pb-0 text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                                         <Link href="/enterprise" onClick={() => setNavbar(!navbar)}>
                                             Enterprise
                                         </Link>
                                     </li>
+
                                     <li className="pb-6 md:pb-0 text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                                         <Link href="/" onClick={() => setNavbar(!navbar)}>
                                             Support
                                         </Link>
                                     </li>
 
-                                    {/* <li className="pb-6 md:pb-0 text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                                        <Link href="" onClick={() => setNavbar(!navbar)}>
-                                            Contact Sales
-                                        </Link>
-                                    </li> */}
 
                                     <div className="md:hidden">
+
                                         <li className="pb-6 md:pb-0 text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                                             <Link href="" onClick={() => setNavbar(!navbar)}>
                                                 Contact Sales
                                             </Link>
                                         </li>
+
                                         <li className="pb-6 md:pb-0 text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+
                                             <Link href="/login" onClick={() => setNavbar(!navbar)}>
                                                 Login
                                             </Link>
@@ -111,14 +106,16 @@ const NavBAr = () => {
                                             Contact Sales
                                         </Link>
                                     </li>
+
                                     <li className="pb-6 md:pb-0 text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                                         <Link href="/login" onClick={() => setNavbar(!navbar)}>
                                             Login
                                         </Link>
                                     </li>
+
                                     <div className="bg-[#462686] flex items-center justify-around w-[39%] px-4 rounded-[100px] text-white">
                                         <button className=''>Try For Free</button>
-                                        <Image src={ArrowRight} alt="arrow down" className='' />
+                                        <Image src={ArrowRight} alt="arrow down" />
                                     </div>
                                 </ul>
                             </div>
