@@ -35,10 +35,10 @@ const Login = () => {
 
                 <label htmlFor="">Password</label>
 
-                <div>
-                    <input type="password" className='w-full my-2 border-2 border-gray-200 focus:border-gray-200 focus:outline-none h-12 pl-5 rounded-lg shadow-lg' />
-                    <Image src={Eye} alt="eye icon" className='absolute top-[15.8rem] md:top-[20.8rem] left-[16rem] md:left-[56rem]' />
-                </div>
+                {/* <div> */}
+                <input type="password" className='w-full my-2 border-2 border-gray-200 focus:border-gray-200 focus:outline-none h-12 pl-5 rounded-lg shadow-lg' />
+                {/* <Image src={Eye} alt="eye icon" className='absolute top-[15.8rem] md:top-[20.8rem] left-[16rem] md:left-[56rem]' /> */}
+                {/* </div> */}
 
                 <button className='bg-[#462686] rounded-full h-10 mt-5 md:mt-8 text-white font-medium text-lg'>Log In</button>
             </form>
